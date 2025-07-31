@@ -10,7 +10,7 @@ export function StudentsTable({ students, onAddStudent, onEditStudent, onRemoveS
                 <h3 className="text-lg font-semibold text-[#374159]">Estudiantes inscritos</h3>
                 <button
                     onClick={onAddStudent}
-                    className="flex items-center gap-2 px-4 py-2 bg-[#1377BD] text-white rounded-lg hover:bg-blue-700 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 bg-[#1377BD] text-white rounded-lg hover:hover:bg-[#12629A] transition-colors"
                 >
                     <UserPlus className="w-4 h-4" />
                     Agregar Estudiante
@@ -55,10 +55,6 @@ export function StudentsTable({ students, onAddStudent, onEditStudent, onRemoveS
                             </td>
                         </tr>
                     ))}
-
-                    <tr>
-                        <td colSpan="4" className="h-20"></td>
-                    </tr>
                     </tbody>
                 </table>
             </div>

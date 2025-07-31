@@ -8,7 +8,6 @@ export function useCourseManagement() {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        // Simular carga de datos del curso
         const mockCourse = {
             id: "course-1",
             title: "Estrategias Didácticas",

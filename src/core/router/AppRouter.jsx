@@ -14,6 +14,8 @@ import TaskDetailPage from '../../modules/student/courses/pages/TaskDetailPage.j
 import AdminLayout from '../layouts/admin/pages/AdminLayout.jsx';
 import QuizPage from '../../modules/student/courses/pages/QuizPage.jsx';
 import CourseAdminPage from '../../modules/admin/courses/pages/CourseAdminPage.jsx';
+import TeachersPage from "../../modules/admin/teachers/pages/TeachersPage.jsx";
+import StudentsPage from "../../modules/admin/students/pages/StudentsPage.jsx";
 
 const AppRouter = () => {
   return (
@@ -40,8 +42,8 @@ const AppRouter = () => {
 
           <Route index path="home" element={<div>Admin Home Page</div>} />
           <Route path="courses" element={<CourseAdminPage/>} />
-          <Route path="teachers" element={<div>Admin Teachers Page</div>} />
-          <Route path="students" element={<div>Admin Students Page</div>}/>
+          <Route path="teachers" element={<TeachersPage/>} />
+          <Route path="students" element={<StudentsPage/>}/>
           <Route path="assigments" element={<div>Admin Assigments Page</div>} />
           <Route path="profile" element={<div>Admin Profile Page</div>} />
           
