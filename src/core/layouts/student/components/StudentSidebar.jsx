@@ -22,6 +22,7 @@ const StudentSidebar = () => {
     { path: "/califications", label: "Calificaciones", icon: <LuListChecks /> },
     { path: "/calendar", label: "Calendario", icon: <LuCalendarDays /> },
     { path: "/profile", label: "Perfil", icon: <LuContactRound /> },
+    
   ];
 
   return (

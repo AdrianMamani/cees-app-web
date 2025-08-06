@@ -14,6 +14,8 @@ import TaskDetailPage from '../../modules/student/courses/pages/TaskDetailPage.j
 import AdminLayout from '../layouts/admin/pages/AdminLayout.jsx';
 import QuizPage from '../../modules/student/courses/pages/QuizPage.jsx';
 import CourseAdminPage from '../../modules/admin/courses/pages/CourseAdminPage.jsx';
+import CrearProfesor from '../../modules/admin/courses/pages/crearProfesor.jsx';
+import CrearEstudiante from '../../modules/admin/courses/pages/crearEstudiante.jsx';
 
 const AppRouter = () => {
   return (
@@ -22,6 +24,7 @@ const AppRouter = () => {
         <Route path="/" element={<StudentLayout />}>
           <Route index path="home" element={<div>Student Home Page</div>} />
           <Route path="courses" element={ <CoursesPage/>} />
+
           <Route path="courses/detail" element={ <CourseDetailPage/> } />
           <Route path="pending-tasks" element={<PendingTasksPage />} />
           <Route path="pending-tasks/:id" element={<PendingTaskDetailPage />} />
@@ -40,8 +43,11 @@ const AppRouter = () => {
 
           <Route index path="home" element={<div>Admin Home Page</div>} />
           <Route path="courses" element={<CourseAdminPage/>} />
-          <Route path="teachers" element={<div>Admin Teachers Page</div>} />
-          <Route path="students" element={<div>Admin Students Page</div>}/>
+
+          <Route path="teachers" element={<CrearProfesor/>} />
+          <Route path="students" element={<CrearEstudiante/>} />
+
+
           <Route path="assigments" element={<div>Admin Assigments Page</div>} />
           <Route path="profile" element={<div>Admin Profile Page</div>} />
           
